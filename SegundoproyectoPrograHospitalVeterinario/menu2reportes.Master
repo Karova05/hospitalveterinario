@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu2reportes.master.cs" Inherits="SegundoproyectoPrograHospitalVeterinario.menu2reportes" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="CSS/menucss.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li><a href="reportes2.aspx"> </a></li>
+                    <li><a href="reportedeusuarios.aspx">reporte de usuarios</a></li>
+                    <li><a href="reportedemascotas.aspx">reporte de mascotas</a></li>
+                    <li><a href="reportedecontroldecitas.aspx">reporte de control de citas </a></li>
+                    <li><a href="inicio.aspx">regresar inicio</a></li>
+                    <li class="slider"></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
